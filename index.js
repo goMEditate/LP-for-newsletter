@@ -15,13 +15,7 @@ const db = firebase.firestore();
 const form = document.querySelector('.form');
 const input = document.querySelector('.input');
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  const email = input.value;
-  createMeditation(email);
-});
-
-export const createMeditation = async email => {
+export const sendMail = async email => {
   db.collection('usersEmails')
     .add({
       email,
@@ -29,8 +23,15 @@ export const createMeditation = async email => {
     .then(() => {
       console.log('Document successfully written!');
       toastr.success(`Thank's! We have your email now!`);
+      input.value = '';
     })
     .catch(error => {
       console.error('Error writing document: ', error);
     });
 };
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const email = input.value;
+  sendMail(email);
+});
