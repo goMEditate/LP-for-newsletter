@@ -6,116 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MEditate</title>
     <link
-      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/tomik23/show-more@1.1.6/dist/css/show-more.min.css"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <img src="./assets/Logo.png" width="60px" height="60px" alt="meditate-logo" uk-img />
+      <header class="header">
+        <img
+          src="./assets/Group 127.svg"
+          width="260px"
+          height="60px"
+          alt="meditate-logo"
+          uk-img
+          class="logo"
+        />
         <div class="header-content">
-          <div class="header-info">
-            <h2>To much noise in your head space?</h2>
-            <h1>Be the first to MEDITATE.</h1>
-            <h3>
-              Select time, background sound, lector's voice and create<br />
-              your meditation from available audio guidance elements. <br />Design your own peace
-              and MEDITATE
+          <div class="info-text">
+            <h1 class="title">
+              Design your own <br />
+              peace and MEditate.
+            </h1>
+            <h3 class="desc">
+              Choose time, background sound, lector’s <br />
+              voice and guidance elements.
             </h3>
-            <p>Leave us your email and we'll let you know when it's out!</p>
-            <form class="form">
-              <input class="input" placeholder="E-mail" type="email" required />
-              <button class="submit-button">Submit</button>
-            </form>
-          </div>
-          <div class="header-photos">
-            <div class="header-phone">
-              <div
-                class="uk-position-relative uk-visible-toggle uk-light header-phone-container"
-                tabindex="-1"
-                uk-slideshow="autoplay: true"
+            <h3 class="desc">Create a meditation that will suit your needs.</h3>
+            <div class="shop-links">
+              <a
+                href="https://apps.apple.com/app/meditate-design-your-peace/id1619967903"
+                target="_blank"
               >
-                <ul class="uk-slideshow-items">
-                  <li>
-                    <img src="./assets/phone1.png" alt="" uk-cover />
-                  </li>
-                  <li>
-                    <img src="./assets/phone2.png" alt="" uk-cover />
-                  </li>
-                  <li>
-                    <img src="./assets/phone3.png" alt="" uk-cover />
-                  </li>
-                  <li>
-                    <img src="./assets/phone4.png" alt="" uk-cover />
-                  </li>
-                  <li>
-                    <img src="./assets/phone5.png" alt="" uk-cover />
-                  </li>
-                  <li>
-                    <img src="./assets/phone6.png" alt="" uk-cover />
-                  </li>
-                </ul>
-              </div>
+                <img
+                  src="./assets/App Store.svg"
+                  width="260px"
+                  height="60px"
+                  alt="appstore-logo"
+                  uk-img
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.gomeditate"
+                target="_blank"
+              >
+                <img
+                  src="./assets/Google Play.svg"
+                  width="260px"
+                  height="60px"
+                  alt="googleplay-logo"
+                  uk-img
+                />
+              </a>
             </div>
           </div>
-          <div class="notch"></div>
+          <div class="phone-wrapper">
+            <img src="./assets/iphone-animation.webp" />
+          </div>
         </div>
       </header>
-      <section class="users">
-        <div class="single-user">
-          <img src="./assets/Ellipse 1.png" width="200px" height="200px" alt="user1" />
-          <blockquote>
-            <p>
-              "After using Headspace for a few months I came to a conclusion that I overpay for
-              features I don't even use and what I actually use – the meditations, isn't worth such
-              a high price. <b>I'm excited about MEditate's focus on meditation,</b> as I go
-              elsewhere for my workouts and playlists."
-            </p>
-            <cite
-              >Julia, <span>MEditate beta tester <br />(ex Headspace user)</span></cite
-            >:
-          </blockquote>
-        </div>
-        <div class="single-user">
-          <img src="./assets/Ellipse 1 (1).png" width="200px" height="200px" alt="user1" />
-          <blockquote>
-            <p>
-              "I love the three main buttons I see as I open MEditate! Turns out it
-              <b>takes less time to follow the four steps and create your own meditation</b>, that's
-              exacly how you want it, than browsing through 1000 available options. I'm a fan!"
-            </p>
-            <cite
-              >Michal, <span>MEditate beta tester <br />(ex Calm user)</span></cite
-            >:
-          </blockquote>
-        </div>
-        <div class="single-user">
-          <img src="./assets/Ellipse 1 (2).png" width="200px" height="200px" alt="user1" />
-          <blockquote>
-            <p>
-              "I'm <b>definitely not a "one size fits all" type</b>, I want to adjust everything to
-              my liking. I've used sevral other meditation apps and eventually I ended up using an
-              iphone timer and youtube background sounds. Luckily this will change now as I plan to
-              stck with MEditate! :)"
-            </p>
-            <cite>Anna, <span>MEditate beta tester</span></cite
-            >:
-          </blockquote>
-        </div>
-      </section>
-      <footer>
-        <p class="privacyPolicy"><a href="#"> Privacy policy</a></p>
-      </footer>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-      <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-      <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-      <script defer src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+
+      <main class="main">
+        <section class="section reviews">
+          <div class="reviews-wrapper">
+            <h2 class="title">Make what works best for you.</h2>
+            <h3 class="desc">
+              By creating a meditation that is adjusted to your own needs and preferences, making
+              this a habit becomes easier. It’s easier to do things that fit your needs.
+            </h3>
+            <div class="reviews-list">
+              <ul>
+                <template class="review-template">
+                  <li>
+                    <div class="stars">
+                      <img src="./assets/star.png" alt="star-icon" />
+                      <img src="./assets/star.png" alt="star-icon" />
+                      <img src="./assets/star.png" alt="star-icon" />
+                      <img src="./assets/star.png" alt="star-icon" />
+                      <img src="./assets/star.png" alt="star-icon" />
+                    </div>
+                    <p class="review-header"></p>
+                    <p class="review-title"></p>
+                    <p class="review-text"></p>
+                  </li>
+                </template>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section coming-soon">
+          <div class="info-text">
+            <h2 class="title">Night time is coming soon!</h2>
+            <h3 class="desc">All the ways of customization for the best sleep experience.</h3>
+            <h3 class="desc">Check the NSDR, sleep stories, meditations and more!</h3>
+
+            <div class="shop-links">
+              <a
+                href="https://apps.apple.com/app/meditate-design-your-peace/id1619967903"
+                target="_blank"
+              >
+                <img
+                  src="./assets/App Store.svg"
+                  width="260px"
+                  height="60px"
+                  alt="appstore-logo"
+                  uk-img
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.gomeditate"
+                target="_blank"
+              >
+                <img
+                  src="./assets/Google Play.svg"
+                  width="260px"
+                  height="60px"
+                  alt="googleplay-logo"
+                  uk-img
+                />
+              </a>
+            </div>
+          </div>
+          <div class="phone-wrapper">
+            <img src="./assets/iphone 2.svg" />
+          </div>
+        </section>
+
+        <footer class="footer">
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/meditate_app/">Instagram</a>
+              </li>
+              <li>
+                <a href="https://discord.gg/EZ72XmWPpk">Discord</a>
+              </li>
+              <li>
+                <a href="#">Spotify</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </main>
+
+      <script src="https://cdn.jsdelivr.net/gh/tomik23/show-more@1.1.6/dist/js/showMore.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
       <script src="./index.js" type="module"></script>
     </div>
